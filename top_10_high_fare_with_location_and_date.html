@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_834015614c28a1f9e16a17ff6fe75fce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_834015614c28a1f9e16a17ff6fe75fce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_834015614c28a1f9e16a17ff6fe75fce = L.map(
+                "map_834015614c28a1f9e16a17ff6fe75fce",
+                {
+                    center: [40.7242323432129, -73.89636959106446],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae9dceedb0e15fe9d4fb317dd4960451 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ae9dceedb0e15fe9d4fb317dd4960451.addTo(map_834015614c28a1f9e16a17ff6fe75fce);
+        
+    
+            var marker_cluster_12726db0f92591933a517f2ad31ad060 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_e17b3c8044aaba8aafdf5265c3d0fcc1 = L.marker(
+                [40.758267, -73.937765],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_b8c3a081f739572d35fa60b04b71395e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e17b3c8044aaba8aafdf5265c3d0fcc1.setIcon(icon_b8c3a081f739572d35fa60b04b71395e);
+        
+    
+        var popup_d01999368660e87dc76c099feec52369 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f87e75ce6dd9a1b70b4b98a319bc474 = $(`<div id="html_2f87e75ce6dd9a1b70b4b98a319bc474" style="width: 100.0%; height: 100.0%;">Fare Amount: $230.0<br>Locality: Queens County<br>Country: United States<br>Pickup Date: 2014-09-07</div>`)[0];
+                popup_d01999368660e87dc76c099feec52369.setContent(html_2f87e75ce6dd9a1b70b4b98a319bc474);
+            
+        
+
+        marker_e17b3c8044aaba8aafdf5265c3d0fcc1.bindPopup(popup_d01999368660e87dc76c099feec52369)
+        ;
+
+        
+    
+    
+            var marker_2997c03dd32db2e54cf1d0c599d5a13d = L.marker(
+                [40.671653000000006, -73.801147],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_bf619991acf08ef83b76ea1631f563c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2997c03dd32db2e54cf1d0c599d5a13d.setIcon(icon_bf619991acf08ef83b76ea1631f563c1);
+        
+    
+        var popup_95e8ecd4da9a3d1cb75b960d8785c395 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2eedb61a5223311fcf96edbd9284110 = $(`<div id="html_d2eedb61a5223311fcf96edbd9284110" style="width: 100.0%; height: 100.0%;">Fare Amount: $220.0<br>Locality: Queens County<br>Country: United States<br>Pickup Date: 2013-09-27</div>`)[0];
+                popup_95e8ecd4da9a3d1cb75b960d8785c395.setContent(html_d2eedb61a5223311fcf96edbd9284110);
+            
+        
+
+        marker_2997c03dd32db2e54cf1d0c599d5a13d.bindPopup(popup_95e8ecd4da9a3d1cb75b960d8785c395)
+        ;
+
+        
+    
+    
+            var marker_9e4520c902f350c048ae436dc9e12438 = L.marker(
+                [40.644601, -73.782161],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_246bb644ab3e55dbdccab804632c4a50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e4520c902f350c048ae436dc9e12438.setIcon(icon_246bb644ab3e55dbdccab804632c4a50);
+        
+    
+        var popup_e23a26138750820dd700d60db6a90a2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9de8e046ae38fd2ecae7c55b792846fe = $(`<div id="html_9de8e046ae38fd2ecae7c55b792846fe" style="width: 100.0%; height: 100.0%;">Fare Amount: $206.38<br>Locality: Queens<br>Country: United States<br>Pickup Date: 2014-11-02</div>`)[0];
+                popup_e23a26138750820dd700d60db6a90a2d.setContent(html_9de8e046ae38fd2ecae7c55b792846fe);
+            
+        
+
+        marker_9e4520c902f350c048ae436dc9e12438.bindPopup(popup_e23a26138750820dd700d60db6a90a2d)
+        ;
+
+        
+    
+    
+            var marker_79a41f82bd7ee4b2b0c4f89ee7ec3770 = L.marker(
+                [40.7885, -73.822978],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_311f632e17ccd16732a65f5a555da88e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79a41f82bd7ee4b2b0c4f89ee7ec3770.setIcon(icon_311f632e17ccd16732a65f5a555da88e);
+        
+    
+        var popup_5615096d6c06bc754bfa73ffd4f0f72f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b0e92d4b074341ab983099ddb63385f = $(`<div id="html_6b0e92d4b074341ab983099ddb63385f" style="width: 100.0%; height: 100.0%;">Fare Amount: $191.8<br>Locality: Queens County<br>Country: United States<br>Pickup Date: 2012-06-26</div>`)[0];
+                popup_5615096d6c06bc754bfa73ffd4f0f72f.setContent(html_6b0e92d4b074341ab983099ddb63385f);
+            
+        
+
+        marker_79a41f82bd7ee4b2b0c4f89ee7ec3770.bindPopup(popup_5615096d6c06bc754bfa73ffd4f0f72f)
+        ;
+
+        
+    
+    
+            var marker_3dc5da0e5868fb26d288b6be52ead5af = L.marker(
+                [40.644630432128906, -73.78174591064453],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_b015d8b2fcdcf612fd0f54bec93e39f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3dc5da0e5868fb26d288b6be52ead5af.setIcon(icon_b015d8b2fcdcf612fd0f54bec93e39f5);
+        
+    
+        var popup_d090cf4876040b5fc810478243cd3cd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de9390f7e8af3898082f547f99722249 = $(`<div id="html_de9390f7e8af3898082f547f99722249" style="width: 100.0%; height: 100.0%;">Fare Amount: $190.83<br>Locality: Queens<br>Country: United States<br>Pickup Date: 2015-04-04</div>`)[0];
+                popup_d090cf4876040b5fc810478243cd3cd7.setContent(html_de9390f7e8af3898082f547f99722249);
+            
+        
+
+        marker_3dc5da0e5868fb26d288b6be52ead5af.bindPopup(popup_d090cf4876040b5fc810478243cd3cd7)
+        ;
+
+        
+    
+    
+            var marker_b2322cc9fe96a326bcfd5d054521d94a = L.marker(
+                [40.665420000000005, -73.797236],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_9d9cfb01da946a1d0de4453824043a1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2322cc9fe96a326bcfd5d054521d94a.setIcon(icon_9d9cfb01da946a1d0de4453824043a1d);
+        
+    
+        var popup_d2c21e42eada75b135fbbaa37cbbf401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ee567868635b54b40c6d193b79ba2cc = $(`<div id="html_9ee567868635b54b40c6d193b79ba2cc" style="width: 100.0%; height: 100.0%;">Fare Amount: $190.0<br>Locality: Queens County<br>Country: United States<br>Pickup Date: 2012-07-29</div>`)[0];
+                popup_d2c21e42eada75b135fbbaa37cbbf401.setContent(html_9ee567868635b54b40c6d193b79ba2cc);
+            
+        
+
+        marker_b2322cc9fe96a326bcfd5d054521d94a.bindPopup(popup_d2c21e42eada75b135fbbaa37cbbf401)
+        ;
+
+        
+    
+    
+            var marker_c304c6b3486c9736638e9124d76cec9d = L.marker(
+                [40.991651, -74.226741],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_87f9de97a8dccd74224a8dacf3ffbd1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c304c6b3486c9736638e9124d76cec9d.setIcon(icon_87f9de97a8dccd74224a8dacf3ffbd1f);
+        
+    
+        var popup_e09688e3b88706755eebb1960751a292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc8ccb6af34bc8665571a5fc04fb3a54 = $(`<div id="html_bc8ccb6af34bc8665571a5fc04fb3a54" style="width: 100.0%; height: 100.0%;">Fare Amount: $183.0<br>Locality: N/A<br>Country: United States<br>Pickup Date: 2014-02-19</div>`)[0];
+                popup_e09688e3b88706755eebb1960751a292.setContent(html_bc8ccb6af34bc8665571a5fc04fb3a54);
+            
+        
+
+        marker_c304c6b3486c9736638e9124d76cec9d.bindPopup(popup_e09688e3b88706755eebb1960751a292)
+        ;
+
+        
+    
+    
+            var marker_9003fec7e4b44ba384bdd9c050f4c08e = L.marker(
+                [40.643437, -73.78929699999999],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_c3ac1e754eb5a77def4459818228c128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9003fec7e4b44ba384bdd9c050f4c08e.setIcon(icon_c3ac1e754eb5a77def4459818228c128);
+        
+    
+        var popup_b216edc1095667c909adc681b6264082 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6afbe471bd08f3a47d2d70eca45decb = $(`<div id="html_b6afbe471bd08f3a47d2d70eca45decb" style="width: 100.0%; height: 100.0%;">Fare Amount: $170.0<br>Locality: Queens County<br>Country: United States<br>Pickup Date: 2014-11-10</div>`)[0];
+                popup_b216edc1095667c909adc681b6264082.setContent(html_b6afbe471bd08f3a47d2d70eca45decb);
+            
+        
+
+        marker_9003fec7e4b44ba384bdd9c050f4c08e.bindPopup(popup_b216edc1095667c909adc681b6264082)
+        ;
+
+        
+    
+    
+            var marker_357c6cbffe6ad0ee9f7dc3f2c580a25c = L.marker(
+                [40.725014, -74.011105],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_a6687b445caef8db6ea32605ea7a8c3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_357c6cbffe6ad0ee9f7dc3f2c580a25c.setIcon(icon_a6687b445caef8db6ea32605ea7a8c3d);
+        
+    
+        var popup_e5e485da2509da7129221a5c3d7a2cdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b4415cf42758f43d86f79c16f360e11 = $(`<div id="html_9b4415cf42758f43d86f79c16f360e11" style="width: 100.0%; height: 100.0%;">Fare Amount: $165.33<br>Locality: Manhattan<br>Country: United States<br>Pickup Date: 2014-01-03</div>`)[0];
+                popup_e5e485da2509da7129221a5c3d7a2cdb.setContent(html_9b4415cf42758f43d86f79c16f360e11);
+            
+        
+
+        marker_357c6cbffe6ad0ee9f7dc3f2c580a25c.bindPopup(popup_e5e485da2509da7129221a5c3d7a2cdb)
+        ;
+
+        
+    
+    
+            var marker_838342c9a83ab745b46480a0fea3b364 = L.marker(
+                [40.70915, -74.01352],
+                {}
+            ).addTo(marker_cluster_12726db0f92591933a517f2ad31ad060);
+        
+    
+            var icon_256ccda5a87a5de744121379593445b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_838342c9a83ab745b46480a0fea3b364.setIcon(icon_256ccda5a87a5de744121379593445b1);
+        
+    
+        var popup_745951392d6cda45f631d996d57a1841 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28fb13056c2a730892fff0252ac2eaeb = $(`<div id="html_28fb13056c2a730892fff0252ac2eaeb" style="width: 100.0%; height: 100.0%;">Fare Amount: $163.0<br>Locality: Manhattan<br>Country: United States<br>Pickup Date: 2014-07-10</div>`)[0];
+                popup_745951392d6cda45f631d996d57a1841.setContent(html_28fb13056c2a730892fff0252ac2eaeb);
+            
+        
+
+        marker_838342c9a83ab745b46480a0fea3b364.bindPopup(popup_745951392d6cda45f631d996d57a1841)
+        ;
+
+        
+    
+    
+            marker_cluster_12726db0f92591933a517f2ad31ad060.addTo(map_834015614c28a1f9e16a17ff6fe75fce);
+        
+</script>
+</html>
