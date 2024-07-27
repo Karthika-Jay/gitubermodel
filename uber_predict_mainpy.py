@@ -9,11 +9,11 @@ import base64
 from streamlit_option_menu import option_menu
 
 # Load the trained model
-with open('C:/Users/lenovo/Desktop/try/uber_fare_prediction/uber_model_pickle.pkl', 'rb') as model_file:
+with open('C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/uber_model_pickle.pkl', 'rb') as model_file:
     model_r = pickle.load(model_file)
 
 # Load the dataset
-df = pd.read_csv('C:/Users/lenovo/Desktop/try/uber_fare_prediction/streamlit.csv')
+df = pd.read_csv('C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/streamlit.csv')
 
 # Title of the app
 st.markdown("<div style='background-color:rgb(0, 0, 0);padding:10px;text-align:center;'><h1 style='color:white;'>Uber Fare Amount Prediction</h1></div>", unsafe_allow_html=True)
@@ -21,7 +21,7 @@ tabs = ["👋😊Home", "📊Fare Predictions"]
 selected_tab = st.selectbox(":orange[**SELECT AN OPTION👇**]", tabs)
 if selected_tab == "👋😊Home":
         # Load the image and encode it in base64
-    with open("C:/Users/lenovo/Desktop/try/uber_fare_prediction/Picture1.jpg", "rb") as image_file:
+    with open("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/Picture1.jpg", "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
 
     # CSS to set the background image
@@ -89,11 +89,11 @@ The project "Uber Fare Prediction and Streamlit Web Application" aims to develop
 The project delivers a trained regression model, a functional Streamlit app, and detailed performance metrics. The dataset used is provided in CSV format and includes variables such as fare amount, pickup and dropoff locations, datetime, and passenger count. The project follows best practices for coding standards, version control, documentation, and data privacy.
                 </p></div>''', unsafe_allow_html=True)
     
-    st.image("C:/Users/lenovo/Desktop/try/uber_fare_prediction/ug1.gif")
+    st.image("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/ug1.gif")
 
 elif selected_tab == "📊Fare Predictions":
     # Load the image and encode it in base64
-    with open("C:/Users/lenovo/Desktop/try/uber_fare_prediction/ui5.jpeg", "rb") as image_file:
+    with open("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/ui5.jpeg", "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
 
     # CSS to set the background image
@@ -244,5 +244,5 @@ elif selected_tab == "📊Fare Predictions":
 
         # Display the GIF in the middle column
         with col2:
-            st.image("C:/Users/lenovo/Desktop/try/uber_fare_prediction/ug2.gif")
+            st.image("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/ug2.gif")
         st.balloons()
