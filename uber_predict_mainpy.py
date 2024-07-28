@@ -21,7 +21,7 @@ tabs = ["👋😊Home", "📊Fare Predictions"]
 selected_tab = st.selectbox(":orange[**SELECT AN OPTION👇**]", tabs)
 if selected_tab == "👋😊Home":
         # Load the image and encode it in base64
-    with open("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/Picture1.jpg", "rb") as image_file:
+    with open("Picture1.jpg", "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
 
     # CSS to set the background image
@@ -89,13 +89,17 @@ The project "Uber Fare Prediction and Streamlit Web Application" aims to develop
 The project delivers a trained regression model, a functional Streamlit app, and detailed performance metrics. The dataset used is provided in CSV format and includes variables such as fare amount, pickup and dropoff locations, datetime, and passenger count. The project follows best practices for coding standards, version control, documentation, and data privacy.
                 </p></div>''', unsafe_allow_html=True)
     
-    st.image("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/ug1.gif")
+    st.image("ug1.gif", caption="Uber Fare Prediction GIF")
 
+    
 elif selected_tab == "📊Fare Predictions":
-    # Load the image and encode it in base64
-    with open("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/ui5.jpeg", "rb") as image_file:
+   
+    # Load and encode the image using a relative path
+    with open("ui5.jpeg", "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
-
+    
+    # Display the image in Streamlit
+    st.image(encoded_string, caption="Uber Fare Prediction Image", use_column_width=True)
     # CSS to set the background image
     st.markdown(
         f"""
@@ -244,5 +248,5 @@ elif selected_tab == "📊Fare Predictions":
 
         # Display the GIF in the middle column
         with col2:
-            st.image("C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/ug2.gif")
+            st.image("ug2.gif", caption="Uber Fare Prediction GIF")
         st.balloons()
