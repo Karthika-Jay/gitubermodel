@@ -9,7 +9,7 @@ import base64
 from streamlit_option_menu import option_menu
 
 # Load the trained model
-with open('C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/uber_model_pickle.pkl', 'rb') as model_file:
+with open('uber_model_pickle.pkl', 'rb') as model_file:
     model_r = pickle.load(model_file)
 
 # Load the dataset
