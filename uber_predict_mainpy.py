@@ -20,22 +20,24 @@ st.markdown("<div style='background-color:rgb(0, 0, 0);padding:10px;text-align:c
 tabs = ["👋😊Home", "📊Fare Predictions"]
 selected_tab = st.selectbox(":orange[**SELECT AN OPTION👇**]", tabs)
 if selected_tab == "👋😊Home":
-    # Display the image directly
-    st.image("ui5.jpeg", caption="Uber Fare Prediction Image", use_column_width=True)
+     # Load the image and encode it in base64
+    with open("Picture1.jpg", "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read()).decode()
     
     # CSS to set the background image
     st.markdown(
-        """
+        f"""
         <style>
-        .stApp {
-            background-image: url('ui5.jpeg');
+        .stApp {{
+            background-image: url(data:image/jpeg;base64,{encoded_string});
             background-size: cover;
             background-position: center;
-        }
+        }}
         </style>
         """,
         unsafe_allow_html=True
     )
+
 
 # Your existing code for fare predictions goes here
     st.markdown(
