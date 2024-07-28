@@ -96,18 +96,19 @@ The project delivers a trained regression model, a functional Streamlit app, and
     
 elif selected_tab == "📊Fare Predictions":
    
-        # Display the image directly
-    st.image("ui5.jpeg", caption="Uber Fare Prediction Image", use_column_width=True)
+    # Load the image and encode it in base64
+    with open("ui5.jpeg", "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read()).decode()
     
-    # CSS to set the background image directly
+    # CSS to set the background image
     st.markdown(
-        """
+        f"""
         <style>
-        .stApp {
-            background-image: url('ui5.jpeg');
+        .stApp {{
+            background-image: url(data:image/jpeg;base64,{encoded_string});
             background-size: cover;
             background-position: center;
-        }
+        }}
         </style>
         """,
         unsafe_allow_html=True
