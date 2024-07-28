@@ -13,7 +13,7 @@ with open('uber_model_pickle.pkl', 'rb') as model_file:
     model_r = pickle.load(model_file)
 
 # Load the dataset
-df = pd.read_csv('C:/Users/lenovo/Desktop/try/uber_fare_prediction_git/streamlit.csv')
+df = pd.read_csv('streamlit.csv')
 
 # Title of the app
 st.markdown("<div style='background-color:rgb(0, 0, 0);padding:10px;text-align:center;'><h1 style='color:white;'>Uber Fare Amount Prediction</h1></div>", unsafe_allow_html=True)
